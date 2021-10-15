@@ -12,6 +12,10 @@ body {
     display: table;
     clear: both;
 }
+.container {
+    width: 80%;
+    margin: auto;
+}
 /*------layout*------*/
 .col {
     float: left;
@@ -21,6 +25,16 @@ body {
 }
 .col-50 {
     width: 50%;
+}
+.jumbo-col-text {
+    width: 30%;
+}
+.jumbo-col-img {
+    width: 65%;
+}
+/*------images------*/
+img {
+    width: 100%;
 }
 /*------buttons-----*/
 .btn {
@@ -38,6 +52,9 @@ body {
 }
 .btn-back-blue:hover {
     background-color: #3c84ff;
+}
+.jumbo-col-text .btn-back-blue {
+    padding: 9px 25px;
 }
 
 
@@ -92,10 +109,38 @@ header {
 
 
 /*----------------------MAIN--------------------*/
+/*jumbotron*/
 .jumbotron {
     background-color: #b4d0e7;
-    text-align: center;
-
-        /*test*/
-        height: 500px;
+    padding-top: 70px;
+    padding-bottom: 350px;
+}
+.jumbotron-content {
+    padding: 100px 0;
+}
+.jumbotron-content h1 {
+    font-size: 83px;
+    line-height: 110px;
+    padding-bottom: 35px;
+}
+.jumbo-col-text {
+    margin-right: 5%;
+    font-size: 18px;
+    line-height: 24px;
+}
+.jumbo-col-text a {
+    color: white;
+    font-size: 18px;
+}
+.jumbo-col-text p {
+    padding-bottom: 30px;
+}
+.jumbo-col-text div {
+    padding-top: 10px;
+    font-size: 16px;
+}
+.jumbo-col-text i {
+    font-size: 45px;
+    padding-top: 40px;
+    
 }
