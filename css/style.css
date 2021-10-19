@@ -6,6 +6,7 @@
 body {
     font-family: "Open Sans", sans-serif;
 }
+
 /*----------COMMON-----------*/
 .clearfix::after {
     content: "";
@@ -13,7 +14,11 @@ body {
     clear: both;
 }
 .container {
-    width: 80%;
+    width: 75%;
+    margin: auto;
+}
+.container-narrow {
+    width: 65%;
     margin: auto;
 }
 /*------layout*------*/
@@ -23,11 +28,39 @@ body {
 .col-float-right {
     float: right;
 }
+.col-20 {
+    width: 20%;
+}
+.col-27 {
+    width: 27%;
+}
+.col-30 {
+    width: 30%;
+}
+.dropbox-plans .col-30 {
+    border: 1px solid #e9e9eb;
+}
+.col-40 {
+    width: 40%;
+}
 .col-50 {
     width: 50%;
 }
-.jumbo-col-text {
+.col-30-right {
     width: 30%;
+    float: right;
+}
+.col-55 {
+    width: 55%;
+}
+.bottom-column {
+    margin-top: 50px;
+    width: 100%;
+    border: 1px solid #e9e9eb;
+
+}
+.jumbo-col-text {
+    width: 31%;
 }
 .jumbo-col-img {
     width: 65%;
@@ -46,7 +79,6 @@ img {
     padding: 7px 18px;
     font-size: 13px;
 }
-
 .btn-back-blue {
     background-color: #0061ff;
 }
@@ -56,7 +88,19 @@ img {
 .jumbo-col-text .btn-back-blue {
     padding: 9px 25px;
 }
-
+a.btn-back-blue {
+    color: white;
+}
+.btn-back-white {
+    border: 1px solid black;
+}
+a.btn-back-white {
+    background-color: white;
+    color: black;
+}
+.btn-back-white:hover {
+    background-color: #e9e9eb;
+}
 
 
 /*----------HEADER-----------*/
@@ -65,11 +109,12 @@ header {
     font-size: 15px;
     background-color: white;
     height: 70px;
-    line-height: 70px;
+    line-height: 69px;
     width: 100%;
     top: 0;
     right: 0;
     position: fixed;
+    z-index: 1;
 }
 /*-----logo----*/
 .dropbox-logo {
@@ -112,35 +157,381 @@ header {
 /*jumbotron*/
 .jumbotron {
     background-color: #b4d0e7;
-    padding-top: 70px;
-    padding-bottom: 350px;
+    padding-top: 140px;
+    padding-bottom: 100px;
 }
 .jumbotron-content {
-    padding: 100px 0;
+    padding-top: 100px 0;
 }
 .jumbotron-content h1 {
-    font-size: 83px;
+    font-size: 70px;
     line-height: 110px;
     padding-bottom: 35px;
 }
 .jumbo-col-text {
-    margin-right: 5%;
-    font-size: 18px;
-    line-height: 24px;
+    margin-right: 4%;
+    font-size: 15px;
+    line-height: 20px;
 }
 .jumbo-col-text a {
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 }
 .jumbo-col-text p {
     padding-bottom: 30px;
 }
 .jumbo-col-text div {
     padding-top: 10px;
-    font-size: 16px;
+    font-size: 12px;
 }
 .jumbo-col-text i {
-    font-size: 45px;
+    font-size: 35px;
     padding-top: 40px;
-    
 }
+.jumbo-col-img {
+    position: relative;
+}
+.jumbo-col-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*-------------dropbox plans------------------*/
+.container-narrow-content {
+    padding-top: 160px;
+    font-size: 14px;
+}
+.container-narrow-content h2 {
+    font-size: 37px;
+}
+/*check-list*/
+.check-list-billing {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+.check-billing {
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #dadadc;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: middle;
+}
+.check-billing:hover {
+    border: solid 5px #0061ff;
+}
+.check-list-billing span {
+    height: 18px;
+    line-height: 18px;
+    vertical-align: middle;
+    padding-right: 20px;
+}
+/*plans columns*/
+.dropbox-plans {
+    padding-top: 20px;
+}
+.dropbox-plans .col-30 {
+    min-height: 1000px;
+}
+.container-narrow-content h3 {
+    font-size: 25px;
+}
+.dropbox-plans .col-30:nth-child(2) {
+    margin: 0 5%;
+}
+.col-30 div:first-child {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #e9e9eb;
+}
+.plan-content {
+    font-size: 13px;
+}
+.dropbox-plans .plan-content {
+    padding: 30px 30px;
+}
+.plan-content .plan-price {
+    font-weight: 900;
+    padding-top: 15px;
+    font-size: 15px;
+}
+.color-gray {
+    color: #707f8c;
+    font-weight: bold;
+    font-size: 13px;
+    padding-top: 9px;
+    padding-bottom: 40px;
+}
+.plan-content ul {
+    list-style-type: none;
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+.plan-features .icon {
+    margin-left: -15px;
+}
+.plan-features li {
+    padding-bottom: 20px;
+}
+.plan-highlights ul {
+    padding-left: 15px;
+}
+.plan-highlights .icon {
+    margin-left: -15px;
+}
+.plan-content .btn-small {
+    padding: 7px 0;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.plan-content .plan-buy-now {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.plan-content .plan-buy-now::after {
+    content: "";
+    background-color: #d7d7da;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    height: 1px;
+    width: 20%;
+}
+.dropbox-plans h5{
+    font-size: 15px;
+    padding-top: 50px;
+}
+.plan-highlights li {
+    padding-top: 20px;
+}
+.plan-highlights i {
+    padding-left: -10px;
+    color: #116bff;
+}
+/*bottom-column*/
+.bottom-column .plan-type {
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #e9e9eb;
+}
+.bottom-col-left {
+    float: left;
+    width: 70%;
+}
+.bottom-col-left .bottom-col-subtitle {
+    padding-top: 15px;
+    padding-bottom: 30px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.bottom-col-right {
+    float: left;
+    width: 30%;
+}
+/*partner finder*/
+.partner-finder {
+    padding-top: 130px;
+}
+.partner-finder .col-40 {
+    margin-left: 5%;
+    padding-top: 40px;
+}
+.partner-finder h3 {
+    padding-bottom: 25px;
+}
+.partner-finder p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.partner-finder a {
+    font-size: 16px;
+    margin-top: 20px;
+}
+/*dropbox business*/
+.dropbox-business-operations {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.row-business:nth-child(2) {
+    padding-bottom: 80px;
+}
+.dropbox-business-operations h2 {
+    padding-bottom: 40px;
+}
+.row-business .col-27:nth-child(2) {
+    margin: 0 9.5%;
+}
+.row-business h3 {
+    padding-bottom: 20px;
+}
+.row-business p {
+    line-height: 20px;
+}
+/*dropbox business teams*/
+.Dropbox-business-team h2 {
+    font-size: 37px;
+    padding-bottom: 25px;
+}
+.Dropbox-business-team a {
+    font-size: 15px;
+}
+.Dropbox-business-team .container-narrow {
+    padding-bottom: 25px;
+}
+.teams-partner {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+}
+/*logos*/
+.col-logos {
+    width: 480px;
+}
+.box {
+    padding: 50px;
+    width: 240px;
+    height: 240px;
+    cursor: pointer;
+}
+.box img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: invert(1);
+}
+.box:hover {
+    border: 10px solid #d0e9cd;
+    padding: 40px;
+}
+.col-text-logos {
+    width: calc(100% - 960px);
+    padding: 50px 45px 0 45px;
+}
+.designit-logo {
+    position: relative;
+}
+.designit-logo img {
+    width: 150px;
+}
+.designit-logo::after {
+    content: "";
+    background-color: #d7d7da;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    height: 1px;
+    width: 10%;
+}
+.col-text-logos p {
+    padding-top: 80px;
+    padding-bottom: 50px;
+}
+.logo-back-lightgreen {
+    background-color: #a2d39b;
+}
+.logo-back-brown {
+    background-color: #61082b;
+}
+.logo-back-lightblue {
+    background-color: #0093ce;
+}
+.logo-back-red {
+    background-color: #ff1c1c;
+}
+.logo-back-darkred {
+    background-color: #d5001f;
+}
+.logo-back-lighterblue {
+    background-color: #b4d0e7;
+}
+.logo-back-blue {
+    background-color: #0d2481;
+}
+.logo-back-yellow {
+    background-color: #ffd830;
+}
+/*free trial*/
+.col-30-right a {
+    width: 100%;
+    text-align: center;
+    border: 0px solid white;
+}
+.free-trial {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+/*usual questions*/
+.usual-questions {
+    padding-bottom: 100px;
+}
+.usual-questions h4 {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+.usual-questions ul {
+    list-style-type: none;
+    font-weight: bold;
+}
+.usual-questions li {
+    line-height: 100px;
+    border-top: 1px solid #e3e3e4;
+}
+.usual-questions li:last-child {
+    border-bottom: 1px solid #e3e3e4;
+}
+.usual-questions span {
+    float: right;
+    margin-right: 30px;
+}
+.usual-questions i {
+    cursor: pointer;
+}
+.back-white {
+    background-color: white;
+}
+/*--------------FOOTER-------------------*/
+footer {
+    background-color: black;
+    color: white;
+}
+.bottom-menu {
+    position: relative;
+}
+footer .menu-footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+footer h5 {
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+footer ul {
+    list-style-type: none;
+}
+footer li a{
+   text-decoration: none;
+   color: white;
+   font-size: 13px;
+   line-height: 25px;
+}
+.bottom-menu::after {
+    content: "";
+    background-color: #d7d7da;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 1px;
+    width: 8%;
+}
+.language {
+    color: #989898;
+    font-size: 12px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
