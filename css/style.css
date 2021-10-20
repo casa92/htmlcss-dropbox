@@ -57,7 +57,6 @@ body {
     margin-top: 50px;
     width: 100%;
     border: 1px solid #e9e9eb;
-
 }
 .jumbo-col-text {
     width: 31%;
@@ -151,8 +150,6 @@ header {
 .right-header li:last-child a:hover {
     border-bottom: none;
 }
-
-
 /*----------------------MAIN--------------------*/
 /*jumbotron*/
 .jumbotron {
@@ -402,6 +399,10 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     filter: invert(1);
+    
+}
+.box:hover img{
+    filter: invert(0);
 }
 .box:hover {
     border: 10px solid #d0e9cd;
@@ -430,6 +431,16 @@ header {
     padding-top: 80px;
     padding-bottom: 50px;
 }
+
+.logo-back-lightgreen:hover,
+.logo-back-brown:hover,
+.logo-back-lightblue:hover,
+.logo-back-red:hover,
+.logo-back-blue:hover,
+.logo-back-yellow:hover,
+.logo-back-darkred:hover {
+    opacity: 0.9;
+}
 .logo-back-lightgreen {
     background-color: #a2d39b;
 }
@@ -447,6 +458,9 @@ header {
 }
 .logo-back-lighterblue {
     background-color: #b4d0e7;
+}
+.col-logos .logo-back-lighterblue:hover {
+    opacity: 0.9;
 }
 .logo-back-blue {
     background-color: #0d2481;
